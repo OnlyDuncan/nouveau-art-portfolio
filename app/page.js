@@ -9,10 +9,9 @@ export default function Home() {
           alt="Background"
           src={Background}
           placeholder="blur"
+          loading="lazy"
           quality={100}
-          fill
-          sizes="100vw"
-          style={{ backgroundPosition: "top", overflowY: "scroll", height: "100vh", objectFit: "cover" }}
+          style={{ backgroundPosition: "top", overflowY: "scroll", width: "100vw", height: "100%", objectFit: "cover" }}
         />
       </div>
     </div>
