@@ -14,7 +14,7 @@ export default function Home() {
           style={{ backgroundPosition: "top", overflowY: "scroll", width: "100vw", height: "100%", objectFit: "cover", zIndex: "0" }}
         />
       </div>
-      <div className="flex absolute z-1 w-full">
+      <div className="flex flex-col absolute z-1 w-full">
         <div className="flex flex-col justify-center align-center items-center w-full" style={{ transform: "translate(20vw)", marginTop: "20vw" }}>
           <div>
             <Image
@@ -31,6 +31,12 @@ export default function Home() {
           <h2 className="scribe text-center text-white" style={{ fontSize: "6vw" }}>
             Fine Artist
           </h2>
+        </div>
+        <br />
+        <div className="flex flex-col justify-center align-center items-center w-full" style={{ marginTop: "40vw"}}>
+          <h1 className="scribe text-center text-white" style={{ fontSize: "7vw" }}>
+            Portfolio
+          </h1>
         </div>
       </div>
     </div>
