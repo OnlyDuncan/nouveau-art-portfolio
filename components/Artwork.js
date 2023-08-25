@@ -26,7 +26,7 @@ import {
     ThePunishmentOfNarcissus,
     TheRapture,
     Untitled
-} from './Images/PortfolioImages';
+} from '../public/Images/PortfolioImages';
 
 export const TraditionalPaintings = [
     {

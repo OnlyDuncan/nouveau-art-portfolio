@@ -1,5 +1,11 @@
+"use client";
+
 import Image from 'next/image';
+import { Provider } from 'react-redux';
+import { Store } from '../components/Store.js';
 import Background from '../public/Images/SiteImages/BackgroundDesktopWhole.webp';
+
+import { Portfolio } from '../components';
 
 export default function Home() {
   return (
@@ -37,6 +43,9 @@ export default function Home() {
           <h1 className="scribe text-center text-white" style={{ fontSize: "7vw" }}>
             Portfolio
           </h1>
+          <Provider store={Store}>
+            <Portfolio />
+          </Provider>
         </div>
       </div>
     </div>
