@@ -4,8 +4,7 @@ import Image from 'next/image';
 import { Provider } from 'react-redux';
 import { Store } from '../components/Store.js';
 import Background from '../public/Images/SiteImages/BackgroundDesktopWhole.webp';
-
-import { Portfolio } from '../components';
+import { Portfolio, CV } from '../components';
 
 export default function Home() {
   return (
@@ -56,7 +55,8 @@ export default function Home() {
         <div className="flex flex-col justify-center align-center items-center w-full" style={{ marginTop: "20vw"}}>
           <h1 className="scribe text-center text-white" style={{ fontSize: "7vw" }}>
             CV
-          </h1>  
+          </h1>
+          <CV />
         </div>
         <div className="flex flex-col justify-center align-center items-center w-full" style={{ marginTop: "20vw"}}>
           <h1 className="scribe text-center text-white" style={{ fontSize: "7vw" }}>
