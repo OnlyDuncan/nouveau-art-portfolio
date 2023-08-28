@@ -1,8 +1,8 @@
 "use client";
 
 import React from 'react';
+import { ImageList, ImageListItem, ListSubheader } from '@mui/material';
 import { useSelector } from 'react-redux';
-import { Col, Row, ListGroup, ListGroupItem, NavLink } from 'reactstrap';
 import { ArtworkModal } from './';
 import {
     selectAllTraditionalPaintings,
@@ -20,84 +20,68 @@ const Portfolio = () => {
 
     return (
         <>
-            <Row style={{ width: '60vw' }}>
-                <Col sm='3'>
-                    <ListGroup>
-                        <ListGroupItem className='list-group-item'>
-                            <NavLink href='#traditionalPaintings' className="text-white">
-                                Traditional Paintings
-                            </NavLink>
-                        </ListGroupItem>
-                        <ListGroupItem className='list-group-item'>
-                            <NavLink href='#sculptures' className="text-white">
-                                Sculptures
-                            </NavLink>
-                        </ListGroupItem>
-                        <ListGroupItem className='list-group-item'>
-                            <NavLink href='#digitalArt' className="text-white">
-                                Digital Art
-                            </NavLink>
-                        </ListGroupItem>
-                        <ListGroupItem className='list-group-item'>
-                            <NavLink href='#otherArt' className="text-white flex-wrap">
-                                Other Art
-                            </NavLink>
-                        </ListGroupItem>
-                    </ListGroup>
-                </Col>
-                <Col sm='9' style={{ height: '60vw', overflowY: 'scroll' }}>
-                    <Row className='ms-auto' id='traditionalPaintings'>
-                        <h1 className="text-white">
-                            Traditional Paintings
-                        </h1>                   
+            <div style={{ width: '60vw' }}>
+                <div className='flex justify-center align-center'>
+                    <a href='#traditionalPaintings' className="text-white baltica mx-5" style={{ fontSize: '1.5vw' }}>
+                        Traditional Paintings
+                    </a>
+                    <a href='#sculptures' className="text-white baltica mx-5" style={{ fontSize: '1.5vw' }}>
+                        Sculptures
+                    </a>
+                    <a href='#digitalArt' className="text-white baltica mx-5" style={{ fontSize: '1.5vw' }}>
+                        Digital Art
+                    </a>
+                    <a href='#otherArt' className="text-white baltica mx-5" style={{ fontSize: '1.5vw' }}>
+                        Other Art
+                    </a>
+                </div>
+                <div>
+                    <ImageList sx={{ width: '60vw', height: '60vw', overflowY: 'scroll', marginTop: '3vw' }} cols={4} rowHeight='20vw'>
+                        <ImageListItem key="Subheader" cols={4}>
+                            <ListSubheader className="scribe text-white bg-transparent" id="traditionalPaintings" component="div" style={{ fontSize: '3vw' }}>Traditional Paintings</ListSubheader>
+                        </ImageListItem>
                         {traditionalPaintings.map((traditionalPainting) => {
                             return (
-                                <Col md='4' key={traditionalPainting.id}>
+                                <ImageListItem key={traditionalPainting.id}>
                                     <ArtworkModal artwork={traditionalPainting} />
-                                </Col>
+                                </ImageListItem>
                             );
                         })}
-                    </Row>
-                    <Row className='ms-auto' id='sculptures'>
-                        <h1 className="text-white">
-                            Sculptures
-                        </h1>
+                        <ImageListItem key="Subheader" cols={4}>
+                            <ListSubheader className="scribe text-white bg-transparent" id="sculptures" component="div" style={{ fontSize: '3vw', marginTop: '2vw' }}>Sculptures</ListSubheader>
+                        </ImageListItem>
                         {sculptures.map((sculpture) => {
                             return (
-                                <Col md='4' key={sculpture.id}>
+                                <ImageListItem key={sculpture.id}>
                                     <ArtworkModal artwork={sculpture} />
-                                </Col>
+                                </ImageListItem>
                             );
                         })}
-                    </Row>
-                    <Row className='ms-auto' id='digitalArt'>
-                        <h1 className="text-white">
-                            Digital Art
-                        </h1>
+                        <ImageListItem key="Subheader" cols={4}>
+                            <ListSubheader className="scribe text-white bg-transparent" id="digitalArt" component="div" style={{ fontSize: '3vw', marginTop: '2vw' }}>Digital Art</ListSubheader>
+                        </ImageListItem>
                         {digitalArt.map((digitalArt) => {
                             return (
-                                <Col md='4' key={digitalArt.id}>
+                                <ImageListItem key={digitalArt.id}>
                                     <ArtworkModal artwork={digitalArt} />
-                                </Col>
+                                </ImageListItem>
                             );
                         })}
-                    </Row>
-                    <Row className='ms-auto' id='otherArt'>
-                        <h1 className="text-white">
-                            Other Art
-                        </h1>
+                        <ImageListItem key="Subheader" cols={4}>
+                            <ListSubheader className="scribe text-white bg-transparent" id="otherArt" component="div" style={{ fontSize: '3vw', marginTop: '2vw' }}>Other Art</ListSubheader>
+                        </ImageListItem>
                         {otherArt.map((otherArt) => {
                             return (
-                                <Col md='4' key={otherArt.id}>
+                                <ImageListItem key={otherArt.id}>
                                     <ArtworkModal artwork={otherArt} />
-                                </Col>
+                                </ImageListItem>
                             );
                         })}
-                    </Row>
-                </Col>
-            </Row>
+                    </ImageList>
+                </div>
+            </div>
         </>
     )
-};
+}
 
 export default Portfolio;

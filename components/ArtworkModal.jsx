@@ -29,14 +29,16 @@ const ArtworkModal = ({ artwork }) => {
     return (
         <div>
             <button onClick={() => setIsOpen(true)}>
-                <Image
-                    alt="Artwork"
-                    src={image}
-                    placeholder="blur"
-                    loading="lazy"
-                    quality={100}
-                    style={{ overflow: "hidden", width: "10vw", height: "15vw" }}
-                />
+                <div>
+                    <Image
+                        alt="Artwork"
+                        src={image}
+                        placeholder="blur"
+                        loading="lazy"
+                        quality={100}
+                        style={{ overflow: "hidden", width: "10vw", height: "15vw" }}
+                    />
+                </div>
             </button>
             <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} style={styles}>
                 <div className="flex-col">
