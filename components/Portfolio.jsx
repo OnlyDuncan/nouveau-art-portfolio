@@ -23,7 +23,7 @@ const Portfolio = () => {
             <div style={{ width: '60vw' }}>
                 <div className='flex justify-center align-center'>
                     <a href='#traditionalPaintings' className="text-white baltica mx-5" style={{ fontSize: '1.5vw' }}>
-                        Traditional Paintings
+                        Paintings
                     </a>
                     <a href='#sculptures' className="text-white baltica mx-5" style={{ fontSize: '1.5vw' }}>
                         Sculptures
@@ -38,7 +38,7 @@ const Portfolio = () => {
                 <div>
                     <ImageList sx={{ width: '60vw', height: '60vw', overflowY: 'scroll', marginTop: '3vw' }} cols={4} rowHeight='20vw'>
                         <ImageListItem key="Subheader" cols={4}>
-                            <ListSubheader className="scribe text-white bg-transparent" id="traditionalPaintings" component="div" style={{ fontSize: '3vw' }}>Traditional Paintings</ListSubheader>
+                            <ListSubheader className="scribe text-white bg-inherit" id="traditionalPaintings" component="div" style={{ fontSize: '3vw' }}>Paintings</ListSubheader>
                         </ImageListItem>
                         {traditionalPaintings.map((traditionalPainting) => {
                             return (
