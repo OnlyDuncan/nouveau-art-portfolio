@@ -37,7 +37,7 @@ const Portfolio = () => {
                 </div>
                 <div>
                     <ImageList sx={{ width: '60vw', height: '60vw', overflowY: 'scroll', marginTop: '3vw' }} cols={4} rowHeight='20vw'>
-                        <ImageListItem key="Subheader" cols={4}>
+                        <ImageListItem cols={4}>
                             <h1 className="scribe text-white bg-inherit" id="traditionalPaintings" component="div" style={{ fontSize: '3vw' }}>Paintings</h1>
                         </ImageListItem>
                         {traditionalPaintings.map((traditionalPainting) => {
@@ -47,7 +47,7 @@ const Portfolio = () => {
                                 </ImageListItem>
                             );
                         })}
-                        <ImageListItem key="Subheader" cols={4}>
+                        <ImageListItem cols={4}>
                             <h1 className="scribe text-white bg-transparent" id="sculptures" component="div" style={{ fontSize: '3vw', marginTop: '2vw' }}>Sculptures</h1>
                         </ImageListItem>
                         {sculptures.map((sculpture) => {
@@ -57,7 +57,7 @@ const Portfolio = () => {
                                 </ImageListItem>
                             );
                         })}
-                        <ImageListItem key="Subheader" cols={4}>
+                        <ImageListItem cols={4}>
                             <h1 className="scribe text-white bg-transparent" id="digitalArt" component="div" style={{ fontSize: '3vw', marginTop: '2vw' }}>Digital Art</h1>
                         </ImageListItem>
                         {digitalArt.map((digitalArt) => {
@@ -67,7 +67,7 @@ const Portfolio = () => {
                                 </ImageListItem>
                             );
                         })}
-                        <ImageListItem key="Subheader" cols={4}>
+                        <ImageListItem cols={4}>
                             <h1 className="scribe text-white bg-transparent" id="otherArt" component="div" style={{ fontSize: '3vw', marginTop: '2vw' }}>Other Art</h1>
                         </ImageListItem>
                         {otherArt.map((otherArt) => {
