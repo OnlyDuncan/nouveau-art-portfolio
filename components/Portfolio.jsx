@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { ImageList, ImageListItem, ListSubheader } from '@mui/material';
+import { ImageList, ImageListItem } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { ArtworkModal } from './';
 import {
@@ -38,7 +38,7 @@ const Portfolio = () => {
                 <div>
                     <ImageList sx={{ width: '60vw', height: '60vw', overflowY: 'scroll', marginTop: '3vw' }} cols={4} rowHeight='20vw'>
                         <ImageListItem key="Subheader" cols={4}>
-                            <ListSubheader className="scribe text-white bg-inherit" id="traditionalPaintings" component="div" style={{ fontSize: '3vw' }}>Paintings</ListSubheader>
+                            <h1 className="scribe text-white bg-inherit" id="traditionalPaintings" component="div" style={{ fontSize: '3vw' }}>Paintings</h1>
                         </ImageListItem>
                         {traditionalPaintings.map((traditionalPainting) => {
                             return (
@@ -48,7 +48,7 @@ const Portfolio = () => {
                             );
                         })}
                         <ImageListItem key="Subheader" cols={4}>
-                            <ListSubheader className="scribe text-white bg-transparent" id="sculptures" component="div" style={{ fontSize: '3vw', marginTop: '2vw' }}>Sculptures</ListSubheader>
+                            <h1 className="scribe text-white bg-transparent" id="sculptures" component="div" style={{ fontSize: '3vw', marginTop: '2vw' }}>Sculptures</h1>
                         </ImageListItem>
                         {sculptures.map((sculpture) => {
                             return (
@@ -58,7 +58,7 @@ const Portfolio = () => {
                             );
                         })}
                         <ImageListItem key="Subheader" cols={4}>
-                            <ListSubheader className="scribe text-white bg-transparent" id="digitalArt" component="div" style={{ fontSize: '3vw', marginTop: '2vw' }}>Digital Art</ListSubheader>
+                            <h1 className="scribe text-white bg-transparent" id="digitalArt" component="div" style={{ fontSize: '3vw', marginTop: '2vw' }}>Digital Art</h1>
                         </ImageListItem>
                         {digitalArt.map((digitalArt) => {
                             return (
@@ -68,7 +68,7 @@ const Portfolio = () => {
                             );
                         })}
                         <ImageListItem key="Subheader" cols={4}>
-                            <ListSubheader className="scribe text-white bg-transparent" id="otherArt" component="div" style={{ fontSize: '3vw', marginTop: '2vw' }}>Other Art</ListSubheader>
+                            <h1 className="scribe text-white bg-transparent" id="otherArt" component="div" style={{ fontSize: '3vw', marginTop: '2vw' }}>Other Art</h1>
                         </ImageListItem>
                         {otherArt.map((otherArt) => {
                             return (
