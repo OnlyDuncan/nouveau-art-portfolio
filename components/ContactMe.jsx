@@ -18,7 +18,7 @@ const ContactMe = () => {
                     Duncan.C.Payne@gmail.com
                 </a>
             </div>
-            <div className="flex justify-center align-center" style={{ marginTop: "15vw" }}>
+            <div className="flex justify-center align-center" style={{ marginTop: "25vw" }}>
                 <a href="https://www.linkedin.com/in/duncan-payne-3493201ba/" target="_blank">
                     <Image
                         src="/Images/SiteImages/LinkedIn.svg"
