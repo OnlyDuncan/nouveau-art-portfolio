@@ -58,11 +58,11 @@ const ArtworkModal = ({ artwork }) => {
                                 style={{ width: "25vw", height: "100%", border: "3px solid white" }}
                             />
                         </div>
-                        <div className="flex-col">
-                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw" }}>Title: {name}</h2>
-                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw" }}>Medium: {medium}</h2>
-                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw" }}>Size: {size}</h2>
-                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw" }}>Year: {year}</h2>
+                        <div className="flex-col" style={{ width: "25vw" }}>
+                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw", marginBottom: "1vw" }}>Title: {name}</h2>
+                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw", marginBottom: "1vw" }}>Medium: {medium}</h2>
+                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw", marginBottom: "1vw" }}>Size: {size}</h2>
+                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw", marginBottom: "1vw" }}>Year: {year}</h2>
                         </div>
                     </div>
                 </div>
