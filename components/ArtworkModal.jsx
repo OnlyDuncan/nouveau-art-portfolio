@@ -21,7 +21,7 @@ const ArtworkModal = ({ artwork }) => {
             transform: 'translate(-50%, -50%)',
             backgroundColor: '#404355',
             width: '70vw',
-            height: '45vw',
+            height: 'auto',
             position: 'relative'
         }
     }
