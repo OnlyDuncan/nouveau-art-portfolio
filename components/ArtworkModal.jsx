@@ -45,17 +45,17 @@ const ArtworkModal = ({ artwork }) => {
                     <div className="flex">
                         <button onClick={() => setIsOpen(false)} className="mr-0 ml-auto" style={{ padding: "2vw" }}>
                             <Image
-                                src="/SiteImages/Close.svg"
-                                style={{ width: "5vw", height: "5vw" }}
+                                src="/Images/SiteImages/Close.svg"
+                                style={{ width: "3vw", height: "3vw" }}
                             />
                         </button>
                     </div>
                     <div className="flex justify-center align-center">
-                        <div style={{ padding: "2vw" }}>
+                        <div style={{ paddingRight: "2vw" }}>
                             <Image
                                 src={image}
                                 alt="Artwork"
-                                style={{ width: "25vw", height: "100%", border: "5px solid white" }}
+                                style={{ width: "25vw", height: "100%", border: "3px solid white" }}
                             />
                         </div>
                         <div className="flex-col">
