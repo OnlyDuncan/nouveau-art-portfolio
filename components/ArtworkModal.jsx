@@ -21,7 +21,7 @@ const ArtworkModal = ({ artwork }) => {
             transform: 'translate(-50%, -50%)',
             backgroundColor: '#404355',
             width: '70vw',
-            height: '80vw',
+            height: '45vw',
             position: 'relative'
         }
     }
@@ -50,12 +50,14 @@ const ArtworkModal = ({ artwork }) => {
                             />
                         </button>
                     </div>
-                    <div className="flex">
-                        <Image
-                            src={image}
-                            alt="Artwork"
-                            style={{ width: "25vw", height: "100%", padding: "2vw", border: "5px solid white" }}
-                        />
+                    <div className="flex justify-center align-center">
+                        <div style={{ padding: "2vw" }}>
+                            <Image
+                                src={image}
+                                alt="Artwork"
+                                style={{ width: "25vw", height: "100%", border: "5px solid white" }}
+                            />
+                        </div>
                         <div className="flex-col">
                             <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw" }}>Title: {name}</h2>
                             <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw" }}>Medium: {medium}</h2>
