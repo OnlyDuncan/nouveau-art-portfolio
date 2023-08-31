@@ -20,8 +20,8 @@ const ArtworkModal = ({ artwork }) => {
             marginRight: '-50%',
             transform: 'translate(-50%, -50%)',
             backgroundColor: '#404355',
-            width: '60rem',
-            height: '60rem',
+            width: '70vw',
+            height: '80vw',
             position: 'relative'
         }
     }
@@ -29,20 +29,20 @@ const ArtworkModal = ({ artwork }) => {
     return (
         <div>
             <button onClick={() => setIsOpen(true)}>
-                <div>
+                <div style={{ width: "10vw", height: "15vw" }}>
                     <Image
                         alt="Artwork"
                         src={image}
                         placeholder="blur"
                         loading="lazy"
                         quality={100}
-                        style={{ overflow: "hidden", width: "10vw", height: "15vw" }}
+                        style={{ oveflowX: "hidden", objectFit: "cover", width: "100%", height: "15vw", border: "2px solid white" }}
                     />
                 </div>
             </button>
             <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} style={styles}>
                 <div className="flex-col">
-                    <div className="flex-row">
+                    <div className="flex">
                         <button onClick={() => setIsOpen(false)} className="mr-0 ml-auto" style={{ padding: "2vw" }}>
                             <Image
                                 src="/SiteImages/Close.svg"
@@ -50,17 +50,17 @@ const ArtworkModal = ({ artwork }) => {
                             />
                         </button>
                     </div>
-                    <div className="flex-row">
+                    <div className="flex">
                         <Image
                             src={image}
                             alt="Artwork"
-                            style={{ width: "30vw", height: "100%" }}
+                            style={{ width: "25vw", height: "100%", padding: "2vw", border: "5px solid white" }}
                         />
                         <div className="flex-col">
-                            <h2>Title: {name}</h2>
-                            <h2>Medium: {medium}</h2>
-                            <h2>Size: {size}</h2>
-                            <h2>Year: {year}</h2>
+                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw" }}>Title: {name}</h2>
+                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw" }}>Medium: {medium}</h2>
+                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw" }}>Size: {size}</h2>
+                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw" }}>Year: {year}</h2>
                         </div>
                     </div>
                 </div>
