@@ -137,6 +137,10 @@ body {
     width: 85vw !important;
   }
 
+  .artModalLayout {
+    flex-direction: column !important;
+  }
+
   .componentScroll {
     overflow-y: scroll !important;
     height: 112vw !important;
