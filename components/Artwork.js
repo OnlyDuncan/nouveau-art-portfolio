@@ -234,9 +234,9 @@ export const OtherArt = [
         id: 1,
         name: 'Sleep',
         image: Sleep,
-        medium: 'Performance Piece / Wearable Kinetic Art, Mixed Media',
-        year: '2018',
-        link: 'https://www.youtube.com/watch?v=s93BkkfaHko'
+        medium: 'Performance Piece / Wearable Kinetic Art, Mixed Media, Link To Video: https://www.youtube.com/watch?v=s93BkkfaHko',
+        size: 'NA',
+        year: '2018'
     },
     {
         id: 2,

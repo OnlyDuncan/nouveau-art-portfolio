@@ -29,13 +29,14 @@ const ArtworkModal = ({ artwork }) => {
     return (
         <div>
             <button onClick={() => setIsOpen(true)}>
-                <div style={{ width: "10vw", height: "15vw" }}>
+                <div className="portfolioImageFrame" style={{ width: "10vw", height: "15vw" }}>
                     <Image
                         alt="Artwork"
                         src={image}
                         placeholder="blur"
                         loading="lazy"
                         quality={100}
+                        className="portfolioImage"
                         style={{ oveflowX: "hidden", objectFit: "cover", width: "100%", height: "15vw", border: "2px solid white" }}
                     />
                 </div>

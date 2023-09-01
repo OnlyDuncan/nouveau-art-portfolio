@@ -36,10 +36,123 @@ body {
   font-style: normal;
 }
 
-.annabelleJF {
-  font-family: "annabelle-jf", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+@media screen and (min-width: 501px) {
+
+  .portfolioMobile {
+    display: none !important;
+  }
+
+  .backgroundImageMobile {
+    display: none !important;
+  }
+
+  .backgroundImageDesktop {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .divs {
+    margin-top: 50vw !important;
+  }
+
+  .headers {
+    font-size: 15vw !important;
+  }
+
+  .logoTitle {
+    transform: translate(0vw) !important;
+  }
+
+  .logo {
+    width: 17vw !important;
+  }
+
+  .titleName {
+    font-size: 9vw !important;
+  }
+
+  .titleTitle {
+    font-size: 8vw !important;
+  }
+
+  .portfolioTab {
+    display: none !important;
+  }
+
+  .portfolioDesktop {
+    display: none !important;
+  }
+
+  .portfolioMobile {
+    height: 90vw !important;
+  }
+
+  .portfolioImageFrame {
+    height: 25vw !important;
+    width: 20vw !important;
+  }
+
+  .portfolioImage {
+    height: 25vw !important;
+  }
+
+  .artistStatement {
+    font-size: 5vw !important;
+    width: 85vw !important;
+  }
+
+  .cvList {
+    width: 85vw !important;
+  }
+
+  .cvTitle {
+    font-size: 6vw !important;
+  }
+
+  .cvText {
+    font-size: 5vw !important;
+  }
+
+  .profileImage {
+    width: 60vw !important;
+  }
+
+  .aboutDescription {
+    font-size: 5vw !important;
+    width: 85vw !important;
+  }
+
+  .contactEmail {
+    font-size: 4vw !important;
+  }
+
+  .contactImage {
+    width: 30vw !important;
+  }
+
+  .contactDescription {
+    font-size: 5vw !important;
+    width: 85vw !important;
+  }
+
+  .componentScroll {
+    overflow-y: scroll !important;
+    height: 120vw !important;
+  }
+
+  .mobileWidth {
+    width: 85vw !important;
+  }
+
+  .backgroundImageDesktop {
+    display: none !important;
+  }
+  
+  .backgroundImageMobile {
+    display: block !important;
+  }
 }
 
 
