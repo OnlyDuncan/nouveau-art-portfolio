@@ -51,7 +51,7 @@ const ArtworkModal = ({ artwork }) => {
                             />
                         </button>
                     </div>
-                    <div className="artModalLayout flex justify-center align-center" style={{ marginBottom: "3vw" }}>
+                    <div className="artModalLayout flex justify-center align-center" style={{ marginBottom: "8vw" }}>
                         <div className="modalImageWrapper" style={{ marginRight: "2vw" }}>
                             <Image
                                 src={image}

@@ -139,6 +139,7 @@ body {
 
   .artModal {
     width: 85vw !important;
+    overflow-y: scroll !important;
   }
 
   .artModalLayout {
