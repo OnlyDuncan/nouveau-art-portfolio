@@ -7,7 +7,7 @@ const ContactMe = () => {
 
     return (
         <div className="flex-col justify-center align-center">
-            <p className="contactDescription baltica text-white text-center" style={{ fontSize: "2vw" }}>
+            <p className="contactDescription baltica text-white text-center" style={{ fontSize: "2vw", width: "60vw" }}>
                 For inquiries about pricing, piece availability, exhibitions, commissions, or prints, send me an email and I will get back to you as soon as possible. Thank you!
             </p>
             <div className="flex justify-center align-center" style={{ marginTop: "10vw" }}>

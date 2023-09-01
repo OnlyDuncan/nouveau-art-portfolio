@@ -63,7 +63,7 @@ export default function Home() {
           </Provider>
         </div>
         <br />
-        <div className="divs flex flex-col justify-center align-center items-center w-full" style={{ marginTop: "20vw" }}>
+        <div className="divs flex flex-col justify-center align-center items-center w-full" style={{ marginTop: "24vw" }}>
           <h1 className="headers scribe text-center text-white" style={{ fontSize: "7vw" }}>
             Artist Statement
           </h1>
@@ -79,22 +79,22 @@ export default function Home() {
               It sweeps them under the rug, to be forgotten and unexamined until they rear their ugly heads, because it wants an idealized version of the world.
               Another thing that I think defines my art is that I tend to work in layers of abstraction, both physical and conceptual.
               I often incorporate aspects of mythology, religion, spirituality and psychology into my work that both further the themes and messages at play, but also make them more esoteric.
-              I’ve always been interested in the intersection between perception and reality, due to my own experiences growing up.
-              At a young age, I was diagnosed with MDD, OCD, ADHD, and GAD, as well as numerous physical problems.
-              Due to this, I’ve often found myself questioning my perceived reality and experiences.
-              Sometimes it seems as though I’m interacting with and experiencing the world through a similar lens of abstraction and this feeling often manifests in my work.
+              As we are, we naturally perceive the world through a myriad of layers. 
+              Things like our mental state, our personal biases, our physical eyesight, and more all coalesce to create what we call reality.
+              I like to capture this dreamlike intersection of perception and ideas in my work.
+              I prefer things to never be quite what they seem.
               While I work in a variety of different media and explore many different ideas, these are the themes I tend to come back to the most.
               While my art mostly acts as a bridge for myself to further explore the world and my own experiences, if it can serve as a source of introspection and interest to others, then I feel like I’ve accomplished something wonderful.
             </p>
           </div>
         </div>
-        <div className="divs flex flex-col justify-center align-center items-center w-full" style={{ marginTop: "20vw" }}>
+        <div className="divs flex flex-col justify-center align-center items-center w-full" style={{ marginTop: "24vw" }}>
           <h1 className="headers scribe text-center text-white" style={{ fontSize: "7vw" }}>
             CV
           </h1>
           <CV />
         </div>
-        <div className="divs flex flex-col justify-center align-center items-center w-full" style={{ marginTop: "20vw" }}>
+        <div className="divs flex flex-col justify-center align-center items-center w-full" style={{ marginTop: "24vw" }}>
           <h1 className="headers scribe text-center text-white" style={{ fontSize: "7vw" }}>
             About Me
           </h1>
@@ -113,7 +113,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="divs flex flex-col justify-center align-center items-center w-full" style={{ marginTop: "20vw" }}>
+        <div className="divs flex flex-col justify-center align-center items-center w-full" style={{ marginTop: "24vw" }}>
           <h1 className="headers scribe text-center text-white" style={{ fontSize: "7vw" }}>
             Contact Me
           </h1>
