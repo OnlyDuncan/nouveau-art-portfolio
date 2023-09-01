@@ -153,6 +153,7 @@ body {
     align-items: center !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    margin-bottom: 0 !important;
   }
 
   .modalImageWrapper {
