@@ -41,7 +41,7 @@ const ArtworkModal = ({ artwork }) => {
                     />
                 </div>
             </button>
-            <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} style={styles}>
+            <Modal className="artModal" isOpen={isOpen} onRequestClose={() => setIsOpen(false)} style={styles}>
                 <div className="flex-col">
                     <div className="flex">
                         <button onClick={() => setIsOpen(false)} className="mr-0 ml-auto" style={{ padding: "2vw" }}>
@@ -56,10 +56,11 @@ const ArtworkModal = ({ artwork }) => {
                             <Image
                                 src={image}
                                 alt="Artwork"
+                                className="modalImage"
                                 style={{ width: "25vw", height: "100%", border: "3px solid white" }}
                             />
                         </div>
-                        <div className="flex-col" style={{ width: "25vw" }}>
+                        <div className="modalInfo flex-col" style={{ width: "25vw" }}>
                             <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw", marginBottom: "1vw" }}>Title: {name}</h2>
                             <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw", marginBottom: "1vw" }}>Medium: {medium}</h2>
                             <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw", marginBottom: "1vw" }}>Size: {size}</h2>

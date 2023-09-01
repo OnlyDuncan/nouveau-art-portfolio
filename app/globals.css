@@ -137,8 +137,20 @@ body {
     width: 85vw !important;
   }
 
+  .artModal {
+    width: 85vw !important;
+  }
+
   .artModalLayout {
     flex-direction: column !important;
+  }
+
+  .modalImage {
+    width: 60vw !important;
+  }
+
+  .modalInfo {
+    width: 60vw !important;
   }
 
   .componentScroll {
