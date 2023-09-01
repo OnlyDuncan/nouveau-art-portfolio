@@ -145,12 +145,20 @@ body {
     flex-direction: column !important;
   }
 
+  .modalImageWrapper {
+    margin-right: 0 !important;
+  }
+
   .modalImage {
     width: 60vw !important;
   }
 
   .modalInfo {
     width: 60vw !important;
+  }
+
+  .modalText {
+    font-size: 4vw !important;
   }
 
   .componentScroll {

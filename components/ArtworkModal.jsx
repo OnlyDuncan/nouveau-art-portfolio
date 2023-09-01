@@ -52,7 +52,7 @@ const ArtworkModal = ({ artwork }) => {
                         </button>
                     </div>
                     <div className="artModalLayout flex justify-center align-center" style={{ marginBottom: "3vw" }}>
-                        <div style={{ marginRight: "2vw" }}>
+                        <div className="modalImageWrapper" style={{ marginRight: "2vw" }}>
                             <Image
                                 src={image}
                                 alt="Artwork"
@@ -61,10 +61,10 @@ const ArtworkModal = ({ artwork }) => {
                             />
                         </div>
                         <div className="modalInfo flex-col" style={{ width: "25vw" }}>
-                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw", marginBottom: "1vw" }}>Title: {name}</h2>
-                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw", marginBottom: "1vw" }}>Medium: {medium}</h2>
-                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw", marginBottom: "1vw" }}>Size: {size}</h2>
-                            <h2 className="baltica text-white text-center" style={{ fontSiz: "2vw", marginBottom: "1vw" }}>Year: {year}</h2>
+                            <h2 className="modalText baltica text-white text-center" style={{ fontSize: "2vw", marginBottom: "1vw" }}>Title: {name}</h2>
+                            <h2 className="modalText baltica text-white text-center" style={{ fontSize: "2vw", marginBottom: "1vw" }}>Medium: {medium}</h2>
+                            <h2 className="modalText baltica text-white text-center" style={{ fontSize: "2vw", marginBottom: "1vw" }}>Size: {size}</h2>
+                            <h2 className="modalText baltica text-white text-center" style={{ fontSize: "2vw", marginBottom: "1vw" }}>Year: {year}</h2>
                         </div>
                     </div>
                 </div>
