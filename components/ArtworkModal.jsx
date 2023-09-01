@@ -47,6 +47,7 @@ const ArtworkModal = ({ artwork }) => {
                         <button onClick={() => setIsOpen(false)} className="mr-0 ml-auto" style={{ padding: "2vw" }}>
                             <Image
                                 src="/Images/SiteImages/Close.svg"
+                                className="modalClose"
                                 style={{ width: "3vw", height: "3vw" }}
                             />
                         </button>

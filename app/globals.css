@@ -142,8 +142,15 @@ body {
     overflow-y: scroll !important;
   }
 
+  .modalClose {
+    width: 5vw !important;
+    height: 5vw !important;
+  }
+
   .artModalLayout {
     flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
