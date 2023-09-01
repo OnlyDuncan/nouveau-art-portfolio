@@ -1,4 +1,4 @@
-# Art Portfolio Project
+# Nouveau Art Portfolio
 
 ## Table of Contents
 * [General Info](#general-info)
