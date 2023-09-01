@@ -144,6 +144,8 @@ body {
 
   .artModalLayout {
     flex-direction: column !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .modalImageWrapper {
@@ -152,6 +154,7 @@ body {
 
   .modalImage {
     width: 60vw !important;
+    margin-bottom: 2vw !important;
   }
 
   .modalInfo {
